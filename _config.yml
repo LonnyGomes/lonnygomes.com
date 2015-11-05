@@ -117,7 +117,7 @@ social:
 pages_list:
   About: 'about'
   Blog: 'blog'
-  Career: 'photography'
+  Photography: 'photography'
   Contact: 'contact'
 
 # Pagination path
