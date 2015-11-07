@@ -33,7 +33,7 @@ keywords: "lonny, gomes, code, photography, personal, jekyll, theme"
 
 black-favicon: "/img/black-lab-glass.ico"
 background-img: "../img/intro-bg.jpg"
-me-img: "/img/jetpacktocat.png"
+me-img: "/img/me.jpg"
 
 ##############################
 # Dynamic Text on the header #
@@ -47,7 +47,7 @@ type-speed:    10        # Default 10
 start-delay: 200    # Default 200
 delete-delay: 5000    # Default 5000
 lines:            # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
+  - text: "The confluence of art and science represents the greatest of human creation."
   - text: "Where’s your will to be weird?"
 
 ########
@@ -60,7 +60,7 @@ paginate: 5
 
 fb-share: True
 twitter-share: True
-reddit-share: True
+reddit-share: False
 disqus-shortname: "lonnygomes"
 
 ###############

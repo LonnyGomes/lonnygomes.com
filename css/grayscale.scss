@@ -155,7 +155,7 @@ ol {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: $light;
+    color: $dark;
     background: url( {{ site.background-img }} ) no-repeat bottom center scroll;
     background-color: $dark;
     -webkit-background-size: cover;
@@ -206,9 +206,9 @@ ol {
     transition: background .3s ease-in-out;
     &:hover,
     &:focus {
-		outline: none;
-		color: $light;
-		background: rgba($light, 0.1);
+        outline: none;
+        color: $light;
+        background: rgba($light, 0.1);
     }
     i.animated {
         -webkit-transition-property: -webkit-transform;
@@ -361,7 +361,7 @@ footer {
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 img::selection {
