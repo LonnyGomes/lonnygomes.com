@@ -117,6 +117,7 @@ social:
 pages_list:
   About: 'about'
   Blog: 'blog'
+  Projects: 'projects'
   Photography: 'photography'
   Contact: 'contact'
 
