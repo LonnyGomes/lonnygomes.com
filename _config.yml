@@ -82,19 +82,15 @@ career-img: "/img/career/default.png"
 # Contact layout #
 ##################
 
-email: "your@email.here"
+email: "contact@lonnygomes.com"
 
 ##################
 # Social Buttons #
 ##################
 
 social:
-  - title: "facebook"
-    url: "https://facebook.com/"
   - title: "twitter"
     url: "https://twitter.com/lonnygomes"
-  - title: "youtube"
-    url: "https://youtube.com/"
   - title: "github"
     url: "https://github.com/LonnyGomes"
   - title: "rss"
