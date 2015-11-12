@@ -7,6 +7,11 @@
 
           {{ page.content | markdownify }}
 
+        <h3>Flickr Feed</h3>
+
+        <a data-flickr-embed="true" data-context="true"  href="https://www.flickr.com/photos/lonny_gomes/20838205331/in/dateposted-public/" title="Maryland State House"><img src="https://farm6.staticflickr.com/5711/20838205331_17211c5e0a_k.jpg" width="768" height="511.5" alt="Maryland State House"></a>
+          <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
           <ul class="timeline">
 
             {% for event in site.events %}
