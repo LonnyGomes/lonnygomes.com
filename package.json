@@ -1,0 +1,33 @@
+{
+  "name": "lonnygomes.com",
+  "version": "1.0.0",
+  "description": "Personal website for Lonny Gomes",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-jekyll": "^0.0.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-jekyll": "0.0.0",
+    "gulp-sass": "^2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LonnyGomes/lonnygomes.com.git"
+  },
+  "author": "Lonny Gomes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LonnyGomes/lonnygomes.com/issues"
+  },
+  "homepage": "https://github.com/LonnyGomes/lonnygomes.com#readme"
+}
