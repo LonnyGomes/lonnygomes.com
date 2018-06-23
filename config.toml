@@ -66,6 +66,12 @@ weight = -10
 identifier = "repository"
 url = "https://github.com/LonnyGomes/lonnygomes.com"
 
+[[menu.sidebar]]
+name = "Blog"
+weight = -10
+identifier = "blog"
+url = "post/"
+
 [blackfriday]
 hrefTargetBlank = true
 
