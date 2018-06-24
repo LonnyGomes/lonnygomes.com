@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"hugo server -D\" \"open http://localhost:1313/\"",
+    "cleanS3": "aws s3 rm s3://lonnygomes.com/ --recursive",
+    "uploadS3": "aws s3 cp docs/ s3://lonnygomes.com/ --recursive",
+    "deploy": "hugo && npm run cleanS3 && npm run uploadS3",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
