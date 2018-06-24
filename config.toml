@@ -4,6 +4,8 @@ title = "lonnygomes.com"
 
 theme = "minimo"
 
+publishDir = "docs"
+
 disqusShortname = ""
 googleAnalytics = ""
 
