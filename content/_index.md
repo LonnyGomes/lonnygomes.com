@@ -6,4 +6,4 @@ menu:
 weight: -200
 ---
 
-TODO
+> New site coming soon!
