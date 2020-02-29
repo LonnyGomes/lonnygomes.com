@@ -4,7 +4,7 @@
   "description": "GitHub repo for http://lonnygomes.com",
   "main": "index.js",
   "scripts": {
-    "start": "",
+    "start": "eleventy --serve --input=src",
     "cleanS3": "aws s3 rm s3://lonnygomes.com/ --recursive",
     "uploadS3": "aws s3 cp docs/ s3://lonnygomes.com/ --recursive",
     "deploy": "hugo && npm run cleanS3 && npm run uploadS3",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/LonnyGomes/lonnygomes.com.git"
   },
   "keywords": [
-    "hugo",
+    "eleventy",
     "website"
   ],
   "author": "Lonny Gomes",
@@ -24,5 +24,7 @@
     "url": "https://github.com/LonnyGomes/lonnygomes.com/issues"
   },
   "homepage": "https://github.com/LonnyGomes/lonnygomes.com#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
 }
