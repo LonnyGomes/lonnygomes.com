@@ -4,7 +4,7 @@
   "description": "GitHub repo for http://lonnygomes.com",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve --input=src",
+    "start": "eleventy --serve",
     "cleanS3": "aws s3 rm s3://lonnygomes.com/ --recursive",
     "uploadS3": "aws s3 cp docs/ s3://lonnygomes.com/ --recursive",
     "deploy": "hugo && npm run cleanS3 && npm run uploadS3",
