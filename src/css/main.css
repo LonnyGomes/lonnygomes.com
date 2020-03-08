@@ -1,4 +1,6 @@
 :root {
+    --primary-clr: #3378d3;
+    --font-clr: #1d1d1d;
     --secondary-bg-clr: #fafafa;
     --header-font: 'Fjalla One', sans-serif;
 }
@@ -16,6 +18,7 @@
 body {
     padding: 0px;
     margin: 0px;
+    color: var(--font-clr);
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
     font-size: 18px;
@@ -48,16 +51,19 @@ body {
     font-family: var(--header-font);
     font-size: 1.5em;
     text-decoration: none;
+    color: var(--primary-clr);
 }
 
 .header-link {
     padding: 2px 5px;
     text-decoration: none;
     font-size: 1.2em;
+    color: var(--font-clr);
 }
 
 .header-link:hover {
     text-decoration: underline;
+    color: var(--primary-clr);
 }
 
 .main-container {
@@ -73,6 +79,14 @@ body {
     display: flex;
     justify-content: space-around;
     font-size: 1.5em;
+}
+
+.social-link {
+    color: var(--font-clr);
+}
+
+.social-link:hover {
+    color: var(--primary-clr);
 }
 
 .footer-container {
