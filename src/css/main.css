@@ -42,8 +42,10 @@ body {
 }
 
 .footer-container {
-    justify-self: flex-end;
-    align-self: flex-end;
+    display: flex;
+    height: 60px;
+    background-color: #ececec;
+    justify-content: center;
 }
 
 .haiku-header {
