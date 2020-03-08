@@ -110,3 +110,20 @@ h3,
 h4 {
     font-family: var(--header-font);
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 2.5em;
+    color: var(--primary-clr);
+}
+
+.navbar a.inactive {
+    cursor: not-allowed;
+    color: #888;
+}
