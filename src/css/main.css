@@ -1,0 +1,60 @@
+:root {
+    --secondary-bg-clr: #fafafa;
+    --header-font: 'Fjalla One', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: #212020;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.base-container {
+    display: flex;
+    flex: 1 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    background-color: var(--secondary-bg-clr);
+    align-items: center;
+}
+
+.main-container {
+    align-self: center;
+    max-width: 768px;
+}
+
+.footer-container {
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.haiku-header {
+    font-size: 3rem;
+}
+
+.haiku-body {
+    font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--header-font);
+}
