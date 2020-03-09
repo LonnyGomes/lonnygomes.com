@@ -2,6 +2,7 @@ const util = require('util');
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/css');
+    eleventyConfig.addPassthroughCopy('src/assets');
 
     eleventyConfig.addLayoutAlias('base', 'base.njk');
     eleventyConfig.addLayoutAlias('haiku', 'haiku.njk');
