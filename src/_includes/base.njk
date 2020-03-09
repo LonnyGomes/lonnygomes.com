@@ -14,17 +14,15 @@ title: LonnyGomes.com
     </head>
     <body>  
         <div class="base-container">
-            <div class="header-container">
+            <header class="header-container">
                 {% include "header.njk" %}
-            </div>
-            <div class="main-container">
-                <main class="main-content">
-                    {{ content | safe }}
-                </main>
-            </div>
-            <div class="footer-container">
+            </header>
+            <main class="main-container">
+                {{ content | safe }}
+            </main>
+            <footer class="footer-container">
                 {% include "footer.njk" %}
-            </div>
+            </footer>
         </div>
     </body>
 </html>
