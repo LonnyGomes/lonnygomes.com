@@ -1,0 +1,28 @@
+---
+title: LonnyGomes.com
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Work+Sans:300,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ '/css/main.css' | url }}" />
+        <link href="{{ '/css/font-awesome/all.min.css' | url }}" rel="stylesheet">
+        <title>{{ title }}</title>
+    </head>
+    <body>  
+        <div class="base-container">
+            <header class="header-container">
+                {% include "header.njk" %}
+            </header>
+            <main class="main-container">
+                {{ content | safe }}
+            </main>
+            <footer class="footer-container">
+                {% include "footer.njk" %}
+            </footer>
+        </div>
+    </body>
+</html>

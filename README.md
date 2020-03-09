@@ -1,17 +1,18 @@
 # README
 
-This is the GitHub repo for http://lonnygomes.com. It is built using a static site generator called [hugo](https://gohugo.io/).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e1d648db-f1ad-4b81-889c-2b097c5e40b5/deploy-status)](https://app.netlify.com/sites/lonnygomes/deploys)
+
+This is the GitHub repo for http://lonnygomes.com. It is built using a static site generator called [eleventy](https://www.11ty.dev).
 
 ## Prerequisites
 
 -   [NodeJS](https://nodejs.org/)
--   [hugo](https://gohugo.io/)
 
 ## Local Development
 
-Before starting, be sure that you've installed [hugo](https://gohugo.io/getting-started/quick-start/).
+Before starting, be sure that you've installed Node.
 
-After you've installed hugo, install the node depenencies:
+Next install the node dependencies:
 
 ```bash
 npm install
@@ -21,12 +22,4 @@ Run the following to start the site locally:
 
 ```bash
 npm start
-```
-
-## Deployment
-
-This site is hosted via an s3 bucket. Run the following to update to production:
-
-```bash
-npm run deploy
 ```
