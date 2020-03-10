@@ -6,6 +6,7 @@ tags:
 ---
 
 <div class="project-content">
-    <h1>{{title}}</h1>
+    <h1 class="project-header">{{title}}</h1>
+    <p class="project-date"> {{ page.date | hugeDate }}</p>
     {{ content | safe }}
 </div>
