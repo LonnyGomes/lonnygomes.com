@@ -3,6 +3,7 @@
     --font-clr: #1d1d1d;
     --secondary-bg-clr: #fafafa;
     --header-font: 'Fjalla One', sans-serif;
+    --max-content-width: 768px;
 }
 
 ::-webkit-scrollbar {
@@ -131,6 +132,30 @@ body {
 
 .haiku-body {
     font-size: 1.5rem;
+}
+
+.project-list {
+    max-width: var(--max-content-width);
+}
+
+.project-list-title {
+    display: block;
+    font-size: 1.4em;
+    font-weight: 400;
+    padding-top: 4px;
+    text-decoration: none;
+    color: var(--font-clr);
+}
+
+.project-list-title:hover {
+    color: var(--primary-clr);
+}
+
+.project-list-date {
+    font-size: 0.9rem;
+    font-style: italic;
+    padding: 4px 0px;
+    margin: 0px;
 }
 
 h1,
