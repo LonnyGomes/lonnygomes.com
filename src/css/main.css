@@ -104,6 +104,11 @@ body {
     flex-grow: 1;
 }
 
+.homepage-tagline {
+    padding: 2px 20px;
+    text-align: center;
+}
+
 .social-links {
     display: flex;
     justify-content: space-around;
