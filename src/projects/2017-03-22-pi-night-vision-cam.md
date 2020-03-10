@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Raspberry Pi Night Vision Camera
+summary: Built an IR security cam with a Pi Zero
 tags: ['project', 'raspberry pi']
 ---
 

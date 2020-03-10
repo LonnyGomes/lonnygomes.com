@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Raspberry Attic Temperature
+summary: Used a pi to continually track temperature in the attic
 tags: ['project', 'raspberry pi']
 ---
 
