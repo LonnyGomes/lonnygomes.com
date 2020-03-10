@@ -1,4 +1,5 @@
 const util = require('util');
+const { DateTime } = require('luxon');
 
 module.exports = function(eleventyConfig) {
     const url = urlStr => eleventyConfig.nunjucksFilters.url(urlStr);
@@ -10,6 +11,10 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addLayoutAlias('haiku', 'haiku.njk');
 
     eleventyConfig.addFilter('debug', data => util.inspect(data));
+    eleventyConfig.addFilter('hugeDate', dateStr =>
+        DateTime.fromJSDate(dateStr).toLocaleString(DateTime.DATE_HUGE)
+    );
+
     eleventyConfig.addShortcode(
         'image',
         (path, alt = '', width = '100%') =>

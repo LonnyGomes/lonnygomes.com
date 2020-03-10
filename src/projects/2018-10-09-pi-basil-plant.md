@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Raspberry Pi Basil Plant Time Lapse
+summary: Created a month-long time lapse using a raspberry pi zero mounted to a custom rig
 tags: ['project', 'raspberry pi', 'timelapse']
 ---
 

@@ -5,8 +5,13 @@ title: LonnyGomes.com - Projects
 
 <h1>Projects</h1>
 
-<ul>
-    {%- for item in collections.project -%}
-    <li><a href="{{item.url | url}}">{{ item.data.title }}</a></li>
+<div class="project-list">
+    {%- for item in collections.project | reverse -%}
+    <a class="project-list-title" href="{{item.url | url}}"
+        >{{ item.data.title }}</a
+    >
+    <p class="project-list-date">{{item.date | hugeDate}}</p>
+    <p>{{item.data.summary}}</p>
+    <hr class="project-list-hr" />
     {%- endfor -%}
-</ul>
+</div>

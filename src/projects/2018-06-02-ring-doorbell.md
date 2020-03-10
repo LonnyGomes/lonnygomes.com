@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Ring Doorbell Installation
+summary: Built custom wedges to mount a ring video doorbell
 tags: ['project']
 ---
 
