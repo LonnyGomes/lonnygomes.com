@@ -142,6 +142,7 @@ body {
 
 .project-list {
     max-width: var(--max-content-width);
+    padding: 5px 10px;
 }
 
 .project-list-title {
