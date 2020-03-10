@@ -104,6 +104,11 @@ body {
     flex-grow: 1;
 }
 
+.homepage-tagline {
+    padding: 2px 20px;
+    text-align: center;
+}
+
 .social-links {
     display: flex;
     justify-content: space-around;
@@ -131,11 +136,13 @@ body {
 }
 
 .haiku-body {
+    padding: 5px;
     font-size: 1.5rem;
 }
 
 .project-list {
     max-width: var(--max-content-width);
+    padding: 5px 10px;
 }
 
 .project-list-title {
@@ -162,6 +169,12 @@ body {
     margin: 0px;
 }
 
+.project-content {
+    display: block;
+    padding: 5px 10px;
+    max-width: 600px;
+}
+
 h1,
 h2,
 h3,
@@ -184,4 +197,10 @@ h4 {
 .navbar a.inactive {
     cursor: not-allowed;
     color: #888;
+}
+
+@media screen and (max-width: 480px) {
+    .haiku-body {
+        font-size: 1rem;
+    }
 }
