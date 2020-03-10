@@ -147,6 +147,10 @@ body {
     color: var(--font-clr);
 }
 
+.project-list-hr {
+    border: 0.5px solid #ddd;
+}
+
 .project-list-title:hover {
     color: var(--primary-clr);
 }
