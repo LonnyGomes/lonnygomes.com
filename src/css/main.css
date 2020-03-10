@@ -51,8 +51,8 @@ body {
 .header-circle {
     display: inline-block;
     position: relative;
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     background-color: #000;
     border-radius: 50%;
 }
@@ -63,10 +63,10 @@ body {
 .header-logo {
     display: inline-block;
     font-family: var(--header-font);
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-decoration: none;
     color: #fff;
-    line-height: 45px;
+    line-height: 40px;
     vertical-align: baseline;
     text-align: center;
     transform: translate(45%, 2%);
