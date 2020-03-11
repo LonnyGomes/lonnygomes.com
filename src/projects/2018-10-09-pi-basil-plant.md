@@ -5,7 +5,7 @@ summary: Created a month-long time lapse using a raspberry pi zero mounted to a 
 tags: ['project', 'raspberry pi', 'timelapse']
 ---
 
-{% image 'raspberry-pi-basil-plant-timelapse.jpg', 'basil plant rig', '320px' %}
+{% image 'raspberry-pi-basil-plant-timelapse.jpg', 'basil plant rig' %}
 
 I created a custom rig made of steel piping and wood feet for stability. A Raspberry Pi Zero and a Raspberry Pi NoIR camera was mounted on the rig, along side an infrared lamp. The lamp was controlled with a SmartThings plug to activate only after sunset.
 
