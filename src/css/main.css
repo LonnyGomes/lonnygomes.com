@@ -185,6 +185,12 @@ body {
     max-width: 600px;
 }
 
+.post-content {
+    display: block;
+    padding: 5px 10px;
+    max-width: 600px;
+}
+
 h1,
 h2,
 h3,

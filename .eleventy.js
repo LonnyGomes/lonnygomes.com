@@ -9,6 +9,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addLayoutAlias('base', 'base.njk');
     eleventyConfig.addLayoutAlias('haiku', 'haiku.njk');
+    eleventyConfig.addLayoutAlias('post', 'post.njk');
 
     eleventyConfig.addFilter('debug', data => util.inspect(data));
     eleventyConfig.addFilter('hugeDate', dateStr =>
