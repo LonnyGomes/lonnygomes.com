@@ -25,6 +25,23 @@ body {
     font-size: 18px;
 }
 
+blockquote {
+    border-left: 4px solid var(--primary-clr);
+    font-style: italic;
+    font-size: 1.3rem;
+    padding: 1px 10px;
+    margin: 10px 0px;
+    background-color: var(--secondary-bg-clr);
+}
+
+blockquote p {
+    margin: 6px 2px;
+}
+
+hr {
+    border: 0.5px solid #ddd;
+}
+
 .base-container {
     display: flex;
     flex: 1 auto;
