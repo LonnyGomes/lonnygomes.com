@@ -1,0 +1,18 @@
+---
+layout: post
+title: LonnyGomes.com - haikus
+pagination:
+    data: collections.haiku
+    size: 20
+    alias: haiku
+---
+
+<h1>Haikus</h1>
+
+{% include "navbar.njk" %}
+
+<div class="haiku-grid">
+    {%- for item in haiku %}
+    <p class="haiku-grid-item">{{ item.data.title }}</p>
+    {% endfor -%}
+</div>
