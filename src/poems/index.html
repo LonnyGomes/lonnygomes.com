@@ -1,0 +1,16 @@
+---
+layout: base
+title: Poems
+---
+
+<h1>Poems</h1>
+
+<div class="project-list">
+    {%- for item in collections.poem -%}
+    <a class="project-list-title" href="{{item.url | url}}"
+        >{{ item.data.title }}</a
+    >
+    <p class="project-list-date">{{item.date | hugeDate}}</p>
+    <hr class="project-list-hr" />
+    {%- endfor -%}
+</div>
