@@ -261,7 +261,43 @@ h4 {
     color: #888;
 }
 
-@media screen and (max-width: 480px) {
+.writings-table {
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+    border-collapse: collapse;
+}
+
+.writings-table-link {
+    color: var(--font-clr);
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.writings-table-link:hover {
+    color: var(--primary-clr);
+    text-decoration: solid;
+}
+
+.writings-table th {
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding-bottom: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--primary-clr);
+}
+
+.writings-table td {
+    padding: 15px 0px;
+    vertical-align: top;
+}
+
+.writings-table td:not(:first-child),
+.writings-table th:not(:first-child) {
+    padding-left: 20px;
+}
+
+. @media screen and (max-width: 480px) {
     .haiku-body {
         font-size: 1rem;
     }
