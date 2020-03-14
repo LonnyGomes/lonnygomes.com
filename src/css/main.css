@@ -152,6 +152,12 @@ hr {
     margin-bottom: 10px;
 }
 
+.haiku-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
 .haiku-body {
     padding: 5px;
     font-size: 1.5rem;
@@ -168,6 +174,16 @@ hr {
 .haiku-grid-item {
     margin: 15px 10px;
     font-size: 2.5rem;
+}
+
+.haiku-grid-item a {
+    color: var(--font-clr);
+    text-decoration-color: var(--primary-clr);
+    text-underline-offset: 5px;
+}
+
+.haiku-grid-item a:hover {
+    color: var(--primary-clr);
 }
 
 .project-list {

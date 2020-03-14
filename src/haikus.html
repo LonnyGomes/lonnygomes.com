@@ -3,16 +3,29 @@ layout: post
 title: LonnyGomes.com - haikus
 pagination:
     data: collections.haiku
-    size: 20
+    size: 15
     alias: haiku
 ---
 
-<h1>Haikus</h1>
+<h1>Haiku List</h1>
 
-{% include "navbar.njk" %}
+<div class="haiku-nav">
+    {% include "navbar.njk" %}
+</div>
 
 <div class="haiku-grid">
     {%- for item in haiku %}
-    <p class="haiku-grid-item">{{ item.data.title }}</p>
+    <!-- prettier-ignore -->
+    <p class="haiku-grid-item">
+        {% if loop.index == 1 %} 
+            {% set curUrl = '/haiku/' %} 
+        {% else %}
+            <!-- we have to compute the index of the URL given the page we are on and the index of the loop -->
+            {% set curUrl = '/haiku/' + ((loop.index - 1) + (pagination.pageNumber *
+        pagination.size))+ '/' %} 
+        {% endif %}
+
+        <a href="{{ curUrl | url }}">{{ item.data.title }}</a>
+    </p>
     {% endfor -%}
 </div>
