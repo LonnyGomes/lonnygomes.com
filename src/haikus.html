@@ -3,13 +3,15 @@ layout: post
 title: LonnyGomes.com - haikus
 pagination:
     data: collections.haiku
-    size: 20
+    size: 15
     alias: haiku
 ---
 
-<h1>Haikus</h1>
+<h1>Haiku List</h1>
 
-{% include "navbar.njk" %}
+<div class="haiku-nav">
+    {% include "navbar.njk" %}
+</div>
 
 <div class="haiku-grid">
     {%- for item in haiku %}
