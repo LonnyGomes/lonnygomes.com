@@ -12,7 +12,7 @@ title: About
 
 If you want to contact me
 
-<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+<form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
   <p>
     <label>Your Name: <input type="text" name="name" /></label>   
   </p>
@@ -20,7 +20,7 @@ If you want to contact me
     <label>Your Email: <input type="email" name="email" /></label>
   </p>
   <p>
-    <label>Message: <textarea name="message" width="100%"></textarea></label>
+    <label>Message: <textarea name="message"></textarea></label>
   </p>
   <div data-netlify-recaptcha="true">
   </div>
