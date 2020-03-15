@@ -28,12 +28,12 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPairedShortcode(
         'code',
-        (
-            content,
-            language = 'javascript'
-        ) => `<pre class="language-${language}"><code class="language-${language}">
-            ${Prism.highlight(content, Prism.languages[language], language)}
-        </code></pre>`
+        (content, language = 'javascript') =>
+            `<pre class="language-${language}"><code class="language-${language}">${Prism.highlight(
+                content.trim(),
+                Prism.languages[language],
+                language
+            )}</code></pre>`
     );
 
     return {
