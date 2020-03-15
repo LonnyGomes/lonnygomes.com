@@ -209,6 +209,10 @@ hr {
     color: var(--font-clr);
 }
 
+.project-list-summary {
+    margin: 5px 0px 20px 0px;
+}
+
 .project-list-hr {
     border: 0.5px solid #ddd;
 }
