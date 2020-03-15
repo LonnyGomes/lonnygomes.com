@@ -1,6 +1,7 @@
 const util = require('util');
 const { DateTime } = require('luxon');
 const Prism = require('prismjs');
+const { default: readTime } = require('read-time-estimate');
 
 module.exports = function(eleventyConfig) {
     const url = urlStr => eleventyConfig.nunjucksFilters.url(urlStr);
@@ -24,6 +25,11 @@ module.exports = function(eleventyConfig) {
             `<img class="img" src="/assets/images/${url(
                 path
             )}" alt="${alt}" width="${width}">`
+    );
+
+    eleventyConfig.addShortcode(
+        'readTime',
+        text => readTime(text).humanizedDuration
     );
 
     eleventyConfig.addPairedShortcode(
