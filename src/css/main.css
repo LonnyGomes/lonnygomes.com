@@ -297,8 +297,22 @@ h4 {
     padding-left: 20px;
 }
 
+.poem-body {
+    padding: 5px 10px;
+}
+
 @media screen and (max-width: 480px) {
     .haiku-body {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .poem-body {
+        font-size: 0.9rem;
+    }
+
+    .poem-body pre {
+        white-space: pre-line;
     }
 }
