@@ -7,6 +7,7 @@ tags:
 
 <div class="project-content">
     <h1 class="project-header">{{title}}</h1>
-    <p class="project-date"> {{ page.date | hugeDate }}</p>
+    <p class="project-date"><i class="far fa-calendar"></i> {{ page.date | hugeDate }}</p>
+    <p class="project-date"><i class="far fa-clock"></i> Read time of {% readTime content %}</p>
     {{ content | safe }}
 </div>
