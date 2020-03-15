@@ -10,7 +10,13 @@ title: LonnyGomes.com - Projects
     <a class="project-list-title" href="{{item.url | url}}"
         >{{ item.data.title }}</a
     >
-    <p class="project-list-date">{{item.date | hugeDate}}</p>
+    <p class="project-list-date">
+        <i class="far fa-calendar"></i> {{item.date | hugeDate}}
+        <span class="project-read-time-inline"
+            ><i class="far fa-clock"></i> {% readTime item.templateContent
+            %}</span
+        >
+    </p>
     <p>{{item.data.summary}}</p>
     <hr class="project-list-hr" />
     {%- endfor -%}
