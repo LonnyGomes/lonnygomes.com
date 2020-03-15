@@ -1,5 +1,6 @@
 const util = require('util');
 const { DateTime } = require('luxon');
+const Prism = require('prismjs');
 
 module.exports = function(eleventyConfig) {
     const url = urlStr => eleventyConfig.nunjucksFilters.url(urlStr);
@@ -23,6 +24,16 @@ module.exports = function(eleventyConfig) {
             `<img class="img" src="/assets/images/${url(
                 path
             )}" alt="${alt}" width="${width}">`
+    );
+
+    eleventyConfig.addPairedShortcode(
+        'code',
+        (
+            content,
+            language = 'javascript'
+        ) => `<pre class="language-${language}"><code class="language-${language}">
+            ${Prism.highlight(content, Prism.languages[language], language)}
+        </code></pre>`
     );
 
     return {
