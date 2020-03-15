@@ -6,4 +6,23 @@ title: About
 
 # About
 
-{% image "lonny-sp.png", "alt", "30%", "right" %}Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eaque tenetur, rem laudantium quaerat culpa incidunt labore totam assumenda, expedita quas possimus eum ipsam unde, quia voluptas sed? Eos, cumque.
+{% image "lonny-sp.png", "alt", "30%", "right" %}My name is Lonny Gomes and I am a software developer from the Washington, DC area. I collect hobbies like it was going out of style and am guilty of creating side projections only to abandon them for yet another side project.
+
+## Contact Me
+
+If you want to contact me
+
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message" width="100%"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
