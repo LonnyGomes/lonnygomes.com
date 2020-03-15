@@ -81,13 +81,13 @@ hr {
 .header-logo {
     display: inline-block;
     font-family: var(--header-font);
-    font-size: 1.3em;
+    font-size: 1.3rem;
     text-decoration: none;
     color: #fff;
     line-height: 40px;
     vertical-align: baseline;
     text-align: center;
-    transform: translate(45%, 2%);
+    transform: translate(54%, 2%);
 }
 
 .header-link {
