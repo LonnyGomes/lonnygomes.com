@@ -10,7 +10,7 @@ title: About
 
 ## Contact Me
 
-If you want to contact me
+If you want to contact me, you can either reach out via [Twitter](https://twitter.com/lonnygomes) or through the form below.
 
 <form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
   <p>
