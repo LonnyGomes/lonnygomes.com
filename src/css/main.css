@@ -50,6 +50,7 @@ button {
     background-color: var(--primary-clr);
     color: var(--inverse-font-clr);
     border: none;
+    cursor: pointer;
 }
 
 .base-container {
