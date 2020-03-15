@@ -21,10 +21,10 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addShortcode(
         'image',
-        (path, alt = '', width = '100%') =>
+        (path, alt = '', width = '100%', align = '') =>
             `<img class="img" src="/assets/images/${url(
                 path
-            )}" alt="${alt}" width="${width}">`
+            )}" alt="${alt}" width="${width}" align="${align}" >`
     );
 
     eleventyConfig.addShortcode(
