@@ -42,6 +42,11 @@ module.exports = function(eleventyConfig) {
             )}</code></pre>`
     );
 
+    eleventyConfig.addPairedShortcode(
+        'responsiveVideo',
+        content => `<div class="video-responsive">${content}</div>`
+    );
+
     return {
         dir: {
             input: 'src'
