@@ -3,8 +3,6 @@
         <a class="header-logo" href="{{ '/' | url }}">LG</a> 
     </div>
     <div class="header-links">
-        <a class="header-link" href="{{ '/projects' | url }}">Projects</a> 
-        <a class="header-link" href="{{ '/writings' | url }}">Writings</a> 
-        <a class="header-link" href="{{ '/about' | url }}">About</a> 
+        {% include 'menu-links.njk' %}
     </div>
 </div>
