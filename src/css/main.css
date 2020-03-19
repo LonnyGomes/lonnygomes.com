@@ -364,10 +364,21 @@ h4 {
     background-color: var(--footer-bg-clr);
     border-top: 0.5px solid #ccc;
     border-bottom: 0.5px solid #ccc;
+    overflow-y: hidden;
+    height: 0px;
 }
 
 .hamburger-menu {
     display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
+
+.mobile-menu-show {
+    height: auto;
 }
 
 @media screen and (max-width: 480px) {

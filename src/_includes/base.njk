@@ -25,12 +25,14 @@ title: LonnyGomes.com
     </head>
     <body>  
         <div class="base-container">
-            <header class="header-container">
-                {% include "header.njk" %}
+            <header class="header">
+                <div class="header-container">
+                    {% include "header.njk" %}
+                </div>
+                <aside id="mobile-menu-container" class="mobile-menu">
+                    {% include 'menu-links.njk' %}
+                </aside>
             </header>
-            <aside class="mobile-menu">
-                {% include 'menu-links.njk' %}
-            </aside>
             <main class="main-container">
                 {{ content | safe }}
             </main>
@@ -38,5 +40,16 @@ title: LonnyGomes.com
                 {% include "footer.njk" %}
             </footer>
         </div>
+        <script>
+        var menuToggle = document.getElementById('menu-toggle');
+        var mobileMenu = document.getElementById('mobile-menu-container');
+        menuToggle.addEventListener('click', function (evt, val2) {
+            if (evt.target.checked) {
+                mobileMenu.classList.add('mobile-menu-show');
+            } else {
+                mobileMenu.classList.remove('mobile-menu-show');
+            }
+        });
+        </script>
     </body>
 </html>
