@@ -357,9 +357,19 @@ h4 {
     position: absolute;
 }
 
+.hamburger-menu {
+    display: none;
+}
+
 @media screen and (max-width: 480px) {
     .haiku-body {
         font-size: 1rem;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .header-links {
+        display: none;
     }
 }
 
