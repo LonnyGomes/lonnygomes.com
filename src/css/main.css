@@ -3,6 +3,7 @@
     --font-clr: #1d1d1d;
     --inverse-font-clr: #fff;
     --secondary-bg-clr: #fafafa;
+    --footer-bg-clr: #ececec;
     --header-font: 'Fjalla One', sans-serif;
     --max-content-width: 700px;
 }
@@ -154,7 +155,7 @@ button {
 .footer-container {
     display: flex;
     height: 50px;
-    background-color: #ececec;
+    background-color: var(--footer-bg-clr);
     justify-content: center;
 }
 
@@ -357,9 +358,41 @@ h4 {
     position: absolute;
 }
 
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--footer-bg-clr);
+    border-top: 0.5px solid #ccc;
+    border-bottom: 0.5px solid #ccc;
+    overflow-y: hidden;
+    height: 0px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
+
+.mobile-menu-show {
+    height: auto;
+}
+
 @media screen and (max-width: 480px) {
     .haiku-body {
         font-size: 1rem;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .header-links {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
     }
 }
 
