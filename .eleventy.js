@@ -18,6 +18,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter('hugeDate', dateStr =>
         DateTime.fromJSDate(dateStr).toLocaleString(DateTime.DATE_HUGE)
     );
+    eleventyConfig.addFilter('fullDate', dateStr =>
+        DateTime.fromJSDate(dateStr).toLocaleString(DateTime.DATE_FULL)
+    );
 
     eleventyConfig.addShortcode(
         'image',
