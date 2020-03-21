@@ -50,6 +50,13 @@ module.exports = function(eleventyConfig) {
         content => `<div class="video-responsive">${content}</div>`
     );
 
+    eleventyConfig.addCollection('tagsList', function(collection) {
+        const [item] = collection.getAll();
+        const tags = Object.keys(item.data.collections);
+
+        return tags;
+    });
+
     return {
         dir: {
             input: 'src'
