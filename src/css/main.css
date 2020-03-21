@@ -260,6 +260,12 @@ button {
     max-width: var(--max-content-width);
 }
 
+.project-tag-group {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
 .post-content {
     display: block;
     padding: 5px 10px;
