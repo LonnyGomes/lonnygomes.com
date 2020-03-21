@@ -52,7 +52,19 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addCollection('tagsList', function(collection) {
         const [item] = collection.getAll();
-        const tags = Object.keys(item.data.collections);
+        const tags = Object.keys(item.data.collections).filter(curTag => {
+            let result = true;
+            switch (curTag) {
+                case 'all':
+                    result = false;
+                    break;
+
+                default:
+                    break;
+            }
+
+            return result;
+        });
 
         return tags;
     });
