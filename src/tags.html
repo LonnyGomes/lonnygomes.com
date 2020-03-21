@@ -26,11 +26,7 @@ permalink: /tags/{{ tag | slug }}/
             >
         </td>
         <td>
-            {% for tag in post.data.tags %} {%- if
-            collections.tagsList.indexOf(tag) != -1 -%} {% set tagUrl %}/tags/{{
-            tag | slug }}/{% endset %}
-            <a href="{{ tagUrl | url }}" class="tag-pill">{{ tag }}</a>
-            {%- endif -%} {% endfor %}
+            {% set tagGroup = post.data.tags %} {% include 'tag-group.njk' %}
         </td>
     </tr>
     {% endfor %}
