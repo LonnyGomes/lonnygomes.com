@@ -1,0 +1,35 @@
+---
+layout: post
+pagination:
+    data: collections
+    size: 1
+    alias: tag
+renderData:
+    title: Content tagged “{{ tag }}”
+permalink: /tags/{{ tag | slug }}/
+---
+
+<h1>Content tagged with “{{ tag }}”</h1>
+
+{% set postsList = collections[ tag ] %}
+
+<table class="tag-table">
+    <tr>
+        <th>Post</th>
+        <th>Tags</th>
+    </tr>
+    {% for post in postsList | reverse %}
+    <tr>
+        <td>
+            <a href="{{ post.url | url }}" class="tag-table-link"
+                >{{ post.data.title }}</a
+            >
+        </td>
+        <td>
+            {% set tagGroup = post.data.tags %} {% include 'tag-group.njk' %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>

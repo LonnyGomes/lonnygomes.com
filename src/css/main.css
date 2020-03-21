@@ -260,6 +260,12 @@ button {
     max-width: var(--max-content-width);
 }
 
+.project-tag-group {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
 .post-content {
     display: block;
     padding: 5px 10px;
@@ -379,6 +385,43 @@ h4 {
 
 .mobile-menu-show {
     height: auto;
+}
+
+.tag-table td {
+    padding: 10px 5px;
+    vertical-align: top;
+}
+
+.tag-table-link {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--font-clr);
+}
+.tag-table-link:hover {
+    color: var(--primary-clr);
+    text-decoration: underline;
+}
+
+.tag-list li {
+    padding: 2px;
+}
+
+.tag-pill {
+    display: inline-block;
+    border: 1px solid var(--primary-clr);
+    background-color: var(--primary-clr);
+    color: var(--inverse-font-clr);
+    padding: 4px 8px;
+    margin: 4px;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.tag-pill:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 480px) {

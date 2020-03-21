@@ -17,6 +17,9 @@ title: LonnyGomes.com - Projects
             %}</span
         >
     </p>
+    <span
+        >{% set tagGroup = item.data.tags %} {% include 'tag-group.njk' %}</span
+    >
     <p class="project-list-summary">{{item.data.summary}}</p>
     <hr class="project-list-hr" />
     {%- endfor -%}

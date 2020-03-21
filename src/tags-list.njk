@@ -1,0 +1,14 @@
+---
+layout: post
+permalink: /tags/
+---
+<h1>Tags</h1>
+
+<ul class="tag-list">
+{% for tag in collections.tagsList %}
+  {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+  <li>
+      <a href="{{ tagUrl | url }}" class="tag-pill">{{ tag }}</a>
+  </li>
+{% endfor %} 
+</ul>

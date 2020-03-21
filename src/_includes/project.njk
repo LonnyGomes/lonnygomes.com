@@ -10,4 +10,10 @@ tags:
     <p class="project-date"><i class="far fa-calendar"></i> {{ page.date | hugeDate }}</p>
     <p class="project-date"><i class="far fa-clock"></i> Read time of {% readTime content %}</p>
     {{ content | safe }}
+    <hr>
+
+    <div class="project-tag-group">
+    {% set tagGroup = tags %}
+    {% include 'tag-group.njk' %}
+    </div>
 </div>
