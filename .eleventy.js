@@ -56,10 +56,10 @@ module.exports = function(eleventyConfig) {
             let result = true;
             switch (curTag) {
                 case 'all':
+                case 'haiku':
+                case 'poem':
+                case 'quote':
                     result = false;
-                    break;
-
-                default:
                     break;
             }
 
