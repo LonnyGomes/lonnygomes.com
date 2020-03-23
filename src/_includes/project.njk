@@ -7,7 +7,10 @@ tags:
 
 <div class="project-content">
     <h1 class="project-header">{{title}}</h1>
-    <p class="project-date"><i class="far fa-calendar"></i> {{ page.date | hugeDate }}</p>
+    <div class="project-header-row">
+        <p class="project-date"><i class="far fa-calendar"></i> {{ page.date | hugeDate }}</p>
+        {% tweet title, page.url %}
+    </div>
     <p class="project-date"><i class="far fa-clock"></i> Read time of {% readTime content %}</p>
     {{ content | safe }}
     <hr>

@@ -2,6 +2,9 @@ const util = require('util');
 const { DateTime } = require('luxon');
 const Prism = require('prismjs');
 const { default: readTime } = require('read-time-estimate');
+const config = {
+    baseUrl: 'https://lonnygomes.com'
+};
 
 module.exports = function(eleventyConfig) {
     const url = urlStr => eleventyConfig.nunjucksFilters.url(urlStr);
@@ -34,6 +37,15 @@ module.exports = function(eleventyConfig) {
         'readTime',
         text => readTime(text).humanizedDuration
     );
+
+    eleventyConfig.addShortcode('tweet', (title, url) => {
+        const tweetContent = `${encodeURI(config.baseUrl)}/${url}`;
+        const urlStr = `https://twitter.com/intent/tweet?text=${encodeURI(
+            title
+        )}&url=${tweetContent}`;
+
+        return `<a class="tweet-link" target="_blank" href="${urlStr}"><i class="fab fa-twitter"></i> Tweet </a>`;
+    });
 
     eleventyConfig.addPairedShortcode(
         'code',
