@@ -39,7 +39,7 @@ module.exports = function(eleventyConfig) {
     );
 
     eleventyConfig.addShortcode('tweet', (title, url) => {
-        const tweetContent = `${encodeURI(config.baseUrl)}/${url}`;
+        const tweetContent = `${encodeURI(config.baseUrl)}${url}`;
         const urlStr = `https://twitter.com/intent/tweet?text=${encodeURI(
             title
         )}&url=${tweetContent}`;
