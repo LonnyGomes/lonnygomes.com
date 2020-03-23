@@ -247,7 +247,11 @@ button {
 .project-header-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+}
+
+.project-header-row .project-date {
+    margin: 0px;
 }
 
 .project-date {
