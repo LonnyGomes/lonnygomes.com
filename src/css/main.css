@@ -424,6 +424,15 @@ h4 {
     text-decoration: underline;
 }
 
+.tweet-link {
+    color: var(--inverse-font-clr);
+    background-color: var(--primary-clr);
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 480px) {
     .haiku-body {
         font-size: 1rem;
