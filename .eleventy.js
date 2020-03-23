@@ -38,9 +38,11 @@ module.exports = function(eleventyConfig) {
         text => readTime(text).humanizedDuration
     );
 
-    eleventyConfig.addShortcode('tweet', url => {
+    eleventyConfig.addShortcode('tweet', (title, url) => {
         const tweetContent = `${encodeURI(config.baseUrl)}/${url}`;
-        const urlStr = `https://twitter.com/intent/tweet?text=${tweetContent}`;
+        const urlStr = `https://twitter.com/intent/tweet?text=${encodeURI(
+            title
+        )}&url=${tweetContent}`;
 
         return `<a class="tweet-link" target="_blank" href="${urlStr}"><i class="fab fa-twitter"></i> Tweet </a>`;
     });
