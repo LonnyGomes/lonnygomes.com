@@ -244,6 +244,16 @@ button {
     margin-bottom: 2px;
 }
 
+.project-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.project-header-row .project-date {
+    margin: 0px;
+}
+
 .project-date {
     font-size: 0.9rem;
     font-style: italic;
@@ -422,6 +432,15 @@ h4 {
 
 .tag-pill:hover {
     text-decoration: underline;
+}
+
+.tweet-link {
+    color: var(--inverse-font-clr);
+    background-color: var(--primary-clr);
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 480px) {
