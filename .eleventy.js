@@ -62,24 +62,26 @@ module.exports = function(eleventyConfig) {
         content => `<div class="video-responsive">${content}</div>`
     );
 
-    eleventyConfig.addCollection('tagsList', function(collection) {
-        const [item] = collection.getAll();
-        const tags = Object.keys(item.data.collections).filter(curTag => {
-            let result = true;
-            switch (curTag) {
-                case 'all':
-                case 'haiku':
-                case 'poem':
-                case 'quote':
-                    result = false;
-                    break;
+    /**
+     * Generate filtered list of tags that excludes items such as haiku or poem
+     */
+    eleventyConfig.addCollection('tagsList', collection =>
+        Object.keys(collection.getAll().shift().data.collections).filter(
+            curTag => {
+                let result = true;
+                switch (curTag) {
+                    case 'all':
+                    case 'haiku':
+                    case 'poem':
+                    case 'quote':
+                        result = false;
+                        break;
+                }
+
+                return result;
             }
-
-            return result;
-        });
-
-        return tags;
-    });
+        )
+    );
 
     return {
         dir: {
