@@ -3,11 +3,11 @@ const { DateTime } = require('luxon');
 const Prism = require('prismjs');
 const { default: readTime } = require('read-time-estimate');
 const config = {
-    baseUrl: 'https://lonnygomes.com'
+    baseUrl: 'https://lonnygomes.com',
 };
 
-module.exports = function(eleventyConfig) {
-    const url = urlStr => eleventyConfig.nunjucksFilters.url(urlStr);
+module.exports = function (eleventyConfig) {
+    const url = (urlStr) => eleventyConfig.nunjucksFilters.url(urlStr);
 
     eleventyConfig.addPassthroughCopy('src/css');
     eleventyConfig.addPassthroughCopy('src/assets');
@@ -17,11 +17,11 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addLayoutAlias('post', 'post.njk');
     eleventyConfig.addLayoutAlias('poem', 'poem.njk');
 
-    eleventyConfig.addFilter('debug', data => util.inspect(data));
-    eleventyConfig.addFilter('hugeDate', dateStr =>
+    eleventyConfig.addFilter('debug', (data) => util.inspect(data));
+    eleventyConfig.addFilter('hugeDate', (dateStr) =>
         DateTime.fromJSDate(dateStr).toLocaleString(DateTime.DATE_HUGE)
     );
-    eleventyConfig.addFilter('fullDate', dateStr =>
+    eleventyConfig.addFilter('fullDate', (dateStr) =>
         DateTime.fromJSDate(dateStr).toLocaleString(DateTime.DATE_FULL)
     );
 
@@ -35,7 +35,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addShortcode(
         'readTime',
-        text => readTime(text).humanizedDuration
+        (text) => readTime(text).humanizedDuration
     );
 
     eleventyConfig.addShortcode('tweet', (title, url) => {
@@ -59,15 +59,15 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPairedShortcode(
         'responsiveVideo',
-        content => `<div class="video-responsive">${content}</div>`
+        (content) => `<div class="video-responsive">${content}</div>`
     );
 
     /**
      * Generate filtered list of tags that excludes items such as haiku or poem
      */
-    eleventyConfig.addCollection('tagsList', collection =>
+    eleventyConfig.addCollection('tagsList', (collection) =>
         Object.keys(collection.getAll().shift().data.collections).filter(
-            curTag => {
+            (curTag) => {
                 let result = true;
                 switch (curTag) {
                     case 'all':
@@ -85,10 +85,10 @@ module.exports = function(eleventyConfig) {
 
     return {
         dir: {
-            input: 'src'
+            input: 'src',
         },
         markdownTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',
-        dataTemplateEngine: 'njk'
+        dataTemplateEngine: 'njk',
     };
 };
