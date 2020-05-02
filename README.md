@@ -23,3 +23,41 @@ Run the following to start the site locally:
 ```bash
 npm start
 ```
+
+## Short codes
+
+### image
+
+```
+{% image "lonny-sp.png", "alt", "30%", "right" %}
+```
+
+### readTime
+
+```
+{% readTime content %}
+```
+
+### tweet
+
+```
+{% tweet title, page.url %}
+```
+
+### code
+
+```
+{% code %}
+console.log('hello world');
+{% endcode %}
+```
+
+### responsiveVideo
+
+```
+{% responsiveVideo %}
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fAmY5sgu3_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% endresponsiveVideo %}
+```
