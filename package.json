@@ -25,7 +25,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "luxon": "^1.22.0",
-    "prismjs": "^1.19.0",
+    "prismjs": "^1.21.0",
     "read-time-estimate": "0.0.2"
   }
 }
