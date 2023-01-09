@@ -24,7 +24,7 @@
   "homepage": "https://github.com/LonnyGomes/lonnygomes.com#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
-    "luxon": "^1.22.0",
+    "luxon": "^2.5.2",
     "prismjs": "^1.19.0",
     "read-time-estimate": "0.0.2"
   }
